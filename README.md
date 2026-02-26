@@ -1,2 +1,2 @@
-# Colección de desarrollo de curso de química
+# Colección de desarrollo del curso de química
 # Academia Caleb - Cusco
