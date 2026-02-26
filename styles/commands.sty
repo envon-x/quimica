@@ -1,0 +1,83 @@
+% mycommands.sty
+% source: https://www.underleaf.ai/learn/latex/style-files
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{styles/commands}[2026/02/06 My custom chemistry commands]
+
+% Load any packages your commands depend on
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{bm}
+\RequirePackage{tikz,lipsum,lmodern}
+\RequirePackage[most]{tcolorbox}
+
+    % --- Custom commands ---
+    
+    % Carga (punto) que representa a los electrones en la estructura de Lewis
+    % Electron dots
+    \newcommand{\eSingleDot}{{\color{colorLewisElectron}\.}}
+    \newcommand{\ePairDot}{{\color{colorLewisElectron}\:}}
+
+    % Cargas positivas y negativas proporcionales y coloreables (evitar usar este, a menos que realmente necesite personalizar las cargas)
+    % Es decir, no definidos
+    \newcommand{\pChargeCol}[2]{{\color{#2}\ensuremath{\scriptscriptstyle {+}#1}}}
+    \newcommand{\nChargeCol}[2]{{\color{#2}\ensuremath{\scriptscriptstyle {-}#1}}}
+
+    %% Carga negativa
+    %% \nCharge{} -  Solo signo "-"
+    %% \nCharge{1} -  signo con "-1"
+    \newcommand{\nChargeLewis}[1]{\nChargeCol{#1}{red}}
+    % \newcommand{\nCharge}[1]{^{\ifthenelse{\equal{#1}{1}}{}{#1}-}}
+
+    % Carga positiva definidas y personalizados (usar este, a menos que quieras personalizar las cargas)
+    %% \pCharge{} -  Solo signo "+"
+    %% \pCharge{1} -  signo con "+1"
+    \newcommand{\pChargeLewis}[1]{\pChargeCol{#1}{blue}}
+    % \newcommand{\pCharge}[1]{^{\ifthenelse{\equal{#1}{1}}{}{#1}+}}
+
+
+    \newcommand{\noMetal}{{\small{NM}}}
+    \newcommand{\metal}{\textbf{\small{M}}}
+    \newcommand{\eoExp}{estados de oxidación }
+
+    % 
+% Carga positiva en superíndice con color, modo texto
+% \newcommand{\pC}[1]{\textsuperscript{\textcolor{posChargeColor}{#1+}}}
+
+% % Carga negativa en superíndice con color, modo texto
+% \newcommand{\nC}[1]{\textsuperscript{\textcolor{negChargeColor}{#1-}}}
+
+% \newcommand{\pC}[1]{^{\textcolor{posChargeColor}{#1+}}}
+% \newcommand{\nC}[1]{^{\textcolor{negChargeColor}{#1-}}}
+
+% Newcommands para colorear dentro de \ch{}
+\newcommand{\ohColor}[1]{\textcolor{oxcolor}{#1}}
+\newcommand{\hColor}[1]{\textcolor{redoxcolor}{#1}}
+
+    \newcommand{\eoOnePos}{^{1+}}
+    \newcommand{\eoTwoPos}{^{2+}}
+    \newcommand{\eoThreePos}{^{3+}}
+    \newcommand{\eoFourPos}{^{4+}}
+    \newcommand{\eoFivePos}{^{5+}}
+    \newcommand{\eoSixPos}{^{6+}}
+    \newcommand{\eoSevenPos}{^{7+}}
+
+    \newcommand{\eoOneNeg}{^{1-}}
+    \newcommand{\eoTwoNeg}{^{2-}}
+    \newcommand{\eoThreeNeg}{^{3-}}
+    \newcommand{\eoFourNeg}{^{4-}}
+    \newcommand{\eoFiveNeg}{^{5-}}
+    \newcommand{\eoSixNeg}{^{6-}}
+    \newcommand{\eoSevenNeg}{^{7-}}
+
+    \newcommand{\reaccionNomenclatura}[4]{%
+    \raisebox{-0.6\height}{%
+        \(\ce{#1}\)
+    }%
+    &
+    \begin{tabular}[t]{@{}l@{}}
+        \textbf{Clásica:} #2 \\
+        \textbf{Stock:} #3 \\
+        \textbf{IUPAC:} #4
+    \end{tabular}
+    }
+\endinput

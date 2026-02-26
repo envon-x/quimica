@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{ifthen}
+
+\usepackage{chemfig}            % Molecular structures
+\usepackage[version=4]{mhchem}  % Chemical formulas and equations
+\usepackage{chemmacros}       % Chemistry macros
+\usepackage{siunitx}          % SI units
+\usepackage{chemformula}        % Alternative to mhchem
+% \usepackage{mol2chemfig}      % Convert SMILES to chemfig
+\usepackage{elements}
+\newcommand*\pkg[1]{\texttt{#1}}
+
+\usepackage{array}
+\renewcommand{\arraystretch}{1.4} % controla el espaciado vertical entre filas en entornos de tipo tabla (tabular, array, matrix, etc.).
+\usepackage[margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{ragged2e}                   % Para alinear dentro de \centering 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Borra configuraciones previas
+
+% HR a la izquierda en pares (LE) y derecha en impares (RO)
+\fancyhead[LE,RO]{HR}
+
+% Bonf a la derecha en pares (RE) e izquierda en impares (LO)
+\fancyhead[RE,LO]{Bonf}
+
+\usepackage{tikz}
+\usepackage{styles/commands}
+\usepackage{styles/colors}
+\usetikzlibrary{decorations.pathreplacing, calc}
+
+\geometry{margin=2cm}
+
+% \title{\textbf{Ejercicios Resueltos de Nomenclatura Inorgánica}}
+\author{Química Inorgánica}
+\date{}
+
+\begin{document}
+
+% \maketitle
+% \pagestyle{fancy}
+%... then configure it.
+% \fancyhead{} % clear all header fields
+% \fancyhead[RO,LE]{\textbf{HR Bonf}}
+
+% \input{chapters/06_tabla_periodica/electronegatividad.tex}
+% \input{chapters/07_enlaces_quimicos/estructura_lewis.tex}
+% \input{chapters/08_nomeclatura/oxidos_acidos.tex}
+% \input{chapters/08_nomeclatura/anfoteros.tex}
+\input{chapters/10_reacciones_quimicas/tipos_reacciones.tex}
+\input{chapters/10_reacciones_quimicas/ecuacion_balances.tex}
+% \section*{Introducción}
+% Este documento contiene más de 100 ejercicios resueltos de nomenclatura de compuestos inorgánicos, incluyendo las tres nomenclaturas principales:
+% \begin{itemize}
+%     \item \textbf{Tradicional}: Usa prefijos (hipo-, per-) y sufijos (-oso, -ico)
+%     \item \textbf{Stock}: Usa números romanos para indicar el estado de oxidación
+%     \item \textbf{IUPAC/Sistemática}: Usa prefijos numéricos (mono-, di-, tri-, etc.)
+% \end{itemize}
+
+% \newpage
+
+
+\end{document}

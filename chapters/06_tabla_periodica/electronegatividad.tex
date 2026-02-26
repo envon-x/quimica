@@ -1,0 +1,45 @@
+\section{Tabla Periódica}
+    \subsection{Electronegatividad}
+    Se define como la capacidad de atraer electrones; esta propiedad está estrechamente relacionado con la estructura electrónica del elemento. Por ejemplo, 
+
+    % \subsection*{Version 2 -- \pkg{chemfig} and \pkg{elements}}
+
+    % \setcharge{debug}
+% \Charge{30=\:,120:3pt=$\ominus$,210:5pt=$\delta^+$}{Fe}\qquad
+% \Charge{[circle]30=\:,
+% 120[circle,anchor=180+\chargeangle]=$\ominus$,
+% 210[anchor=180+\chargeangle]=$\delta^+$}{Fe}
+
+
+
+
+
+\schemestart
+    \chemname[1.5ex]{\charge{180=\eSingleDot}{Li}}{\scriptsize\elconf{Li}}
+    \+{1.5em}
+    \chemname[1.5ex]{
+        \charge{
+            0=\eSingleDot,
+            90=\ePairDot,
+            180=\ePairDot,
+            270=\ePairDot
+        }{F}
+    }{\scriptsize\elconf{F}}
+    \arrow{->}
+    \chemname[1.5ex]{\charge{45=\pChargeLewis{}}{Li}}{\scriptsize\writeelconf{2}}
+    \+{1em}
+    \chemname[1.5ex]{
+        \charge{
+            0=\ePairDot,
+            90=\ePairDot,
+            180=\ePairDot,
+            270=\ePairDot,
+            45=\nChargeLewis{}
+        }{F}
+    }{\scriptsize\writeelconf{2,2+6}}
+\schemestop
+
+
+
+
+    $\text{metales} \ll \ce{Te, P, H, As, B, Si} < \ce{I, S, C, Se} < \ce{Br} < \ce{Cl, N} < \ce{O} < \ce{F}$

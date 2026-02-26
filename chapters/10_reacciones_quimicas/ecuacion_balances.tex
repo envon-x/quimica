@@ -1,0 +1,600 @@
+\section{Ecuaciones químicas y balance de ecuaciones}
+
+\subsection{Ecuación química}
+
+Una ecuación química es la representación simbólica de una reacción química, donde se muestran:
+\begin{itemize}
+    \item Reactivos (sustancias iniciales)
+    \item Productos (sustancias finales)
+    \item Coeficientes estequiométricos
+    \item Estados físicos (opcional)
+    \item Condiciones de reacción (opcional)
+\end{itemize}
+
+Ejemplo de ecuación balanceada:
+\[
+\ce{2H2 + O2 -> 2H2O}
+\]
+
+---
+
+\subsection{Ley de conservación de la masa}
+
+El balance de ecuaciones químicas se basa en la \textbf{ley de conservación de la masa}, que establece que:
+\begin{quote}
+La materia no se crea ni se destruye, solo se transforma.
+\end{quote}
+
+Por lo tanto, el número de átomos de cada elemento debe ser el mismo en reactivos y productos.
+
+---
+
+\subsection{Balance de ecuaciones químicas}
+
+Balancear una ecuación consiste en ajustar los coeficientes estequiométricos para cumplir la conservación de la masa.
+
+\subsubsection*{Reglas generales}
+\begin{enumerate}
+    \item No se modifican los subíndices de las fórmulas.
+    \item Solo se ajustan coeficientes delante de las especies.
+    \item El coeficiente 1 no se escribe.
+    \item El balance se realiza con los números enteros más pequeños posibles.
+\end{enumerate}
+
+---
+
+\subsection{Métodos de balanceo}
+
+\subsubsection*{1. Método por tanteo (inspección)}
+
+Se ajustan los coeficientes observando el número de átomos.
+
+\paragraph{Ejemplo:}
+
+Ecuación sin balancear:
+\[
+\ce{Fe + O2 -> Fe2O3}
+\]
+
+Ecuación balanceada:
+\[
+\ce{4Fe + 3O2 -> 2Fe2O3}
+\]
+
+---
+
+\subsubsection*{2. Método algebraico}
+
+Se asignan incógnitas a los coeficientes.
+
+\paragraph{Ejemplo:}
+
+\[
+\ce{aC2H6 + bO2 -> cCO2 + dH2O}
+\]
+
+Sistema de ecuaciones:
+\[
+\begin{aligned}
+\text{C: } & 2a = c \\
+\text{H: } & 6a = 2d \\
+\text{O: } & 2b = 2c + d
+\end{aligned}
+\]
+
+Solución mínima:
+\[
+\ce{2C2H6 + 7O2 -> 4CO2 + 6H2O}
+\]
+
+---
+
+\subsubsection*{3. Método de estados de oxidación (números de valencia)}
+
+Este método se basa en identificar los cambios en los números de oxidación de los elementos que participan en una reacción química, garantizando que la cantidad total de electrones perdidos en la oxidación sea igual a la cantidad total de electrones ganados en la reducción.
+
+\paragraph{Pasos del método}
+
+\begin{enumerate}
+    \item Escribir la ecuación química sin balancear.
+    
+    \item Asignar los números de oxidación a todos los elementos en reactivos y productos.
+    
+    \item Identificar qué especies se oxidan (aumentan su número de oxidación) y cuáles se reducen (disminuyen su número de oxidación).
+    
+    \item Calcular la variación del número de oxidación (\(\Delta\)) para cada elemento que cambia.
+    
+    \item Igualar el número total de electrones cedidos y aceptados, ajustando los coeficientes estequiométricos.
+    
+    \item Balancear los demás elementos distintos del oxígeno y del hidrógeno.
+    
+    \item Balancear oxígeno e hidrógeno:
+    \begin{itemize}
+        \item En medio ácido, añadir \(\ce{H2O}\) para balancear O y \(\ce{H^+}\) para balancear H.
+        \item En medio básico, usar \(\ce{H2O}\) y \(\ce{OH^-}\).
+    \end{itemize}
+    
+    \item Verificar que la ecuación final cumpla conservación de masa y carga.
+\end{enumerate}
+
+%=====================================================
+
+\paragraph{Ejemplo: reacción entre hierro y ácido nítrico}
+
+Ecuación sin balancear:
+\[
+\ce{Fe + HNO3 -> Fe(NO3)3 + NO + H2O}
+\]
+
+\paragraph{Asignación de números de oxidación}
+
+\[
+\ce{
+\overset{0}{\mathrm{Fe}}
++
+\overset{+1}{\mathrm{H}}
+\overset{+5}{\mathrm{N}}
+\overset{-2}{\mathrm{O}}3
+->
+\overset{+3}{\mathrm{Fe}}
+(
+\overset{+5}{\mathrm{N}}
+\overset{-2}{\mathrm{O}}3
+)3
++
+\overset{+2}{\mathrm{N}}
+\overset{-2}{\mathrm{O}}
++
+\overset{+1}{\mathrm{H}}2
+\overset{-2}{\mathrm{O}}
+}
+\]
+
+\paragraph{Cambios de número de oxidación}
+
+\begin{itemize}
+    \item \(\ce{Fe^0 -> Fe^{3+}}\) \quad (oxidación, pierde 3 electrones)
+    \item \(\ce{N^{+5} -> N^{+2}}\) \quad (reducción, gana 3 electrones)
+\end{itemize}
+
+La transferencia de electrones es equivalente, por lo que la relación molar entre Fe y N reducido es 1:1.
+
+\paragraph{Ecuación balanceada}
+
+\[
+\ce{Fe + 4HNO3 -> Fe(NO3)3 + NO + 2H2O}
+\]
+
+\paragraph{Verificación}
+
+\begin{itemize}
+    \item Fe: 1 = 1
+    \item N: 4 = 3 + 1
+    \item H: 4 = 4
+    \item O: 12 = 9 + 1 + 2
+\end{itemize}
+
+\subsubsection*{Ejemplo: Formación de \ce{NH4NO3} en la reacción Fe + HNO3}
+
+La formación de nitrato de amonio ocurre cuando el ácido nítrico es muy diluido y el metal se encuentra en exceso, permitiendo la reducción profunda del nitrógeno.
+
+\paragraph{Ecuación sin balancear}
+
+\[
+\ce{Fe + HNO3 -> Fe(NO3)2 + NH4NO3 + H2O}
+\]
+
+---
+
+\paragraph{Asignación de números de oxidación}
+
+\[
+\ce{
+\overset{0}{\mathrm{Fe}}
++
+\overset{+1}{\mathrm{H}}
+\overset{+5}{\mathrm{N}}
+\overset{-2}{\mathrm{O}}3
+->
+\overset{+2}{\mathrm{Fe}}
+(
+\overset{+5}{\mathrm{N}}
+\overset{-2}{\mathrm{O}}3
+)2
++
+\overset{-3}{\mathrm{N}}
+\overset{+1}{\mathrm{H}}4
+(
+\overset{+5}{\mathrm{N}}
+\overset{-2}{\mathrm{O}}3
+)
++
+\overset{+1}{\mathrm{H}}2
+\overset{-2}{\mathrm{O}}
+}
+\]
+
+---
+
+\paragraph{Cambios de número de oxidación}
+
+\begin{itemize}
+    \item Oxidación:
+    \[
+    \ce{\overset{0}{Fe} -> \overset{+2}{Fe} + 2e^-}
+    \]
+    
+    \item Reducción:
+    \[
+    \ce{\overset{+5}{N} + 8e^- -> \overset{-3}{N}}
+    \]
+\end{itemize}
+
+Para igualar electrones:
+\[
+\text{m.c.m.}(2,8) = 8 \Rightarrow 4\,\text{Fe} \; \text{por cada}\; 1\,\text{N reducido}
+\]
+
+---
+
+\paragraph{Ecuación balanceada}
+
+\[
+\ce{
+4Fe + 10HNO3(dil)
+->
+4Fe(NO3)2 + NH4NO3 + 3H2O
+}
+\]
+
+---
+
+\paragraph{Verificación}
+
+\begin{itemize}
+    \item Fe: \(4 = 4\)
+    \item N: \(10 = 8 + 2\)
+    \item H: \(10 = 4 + 6\)
+    \item O: \(30 = 24 + 3 + 3\)
+\end{itemize}
+
+
+---
+
+\subsubsection*{4. Método ion--electrón (reacciones redox)}
+
+Este método se emplea para balancear reacciones de oxidación--reducción en disolución acuosa, ya sea en medio ácido o básico.  
+Se basa en separar la reacción global en semirreacciones de oxidación y reducción, equilibrando masa y carga mediante electrones.
+
+Se necesita conocer quiénes se ionizan y quiénes no
+
+Se ionizan:
+\begin{itemize}
+    \item ácidos hidrácidos, oxácidos y ácidos orgánicos
+    \item hidróxidos o bases, 
+    \item sales en general
+\end{itemize}
+
+No se ionizan:
+
+\begin{itemize}
+    \item óxidos en general,
+    \item hidruros,
+    \item elementos,
+    \item compuestos orgánicos (excepto sales y ácidos orgánicos)
+\end{itemize}
+---
+
+% El permanganato de potasio (se usa para tratar algunas parásitos de los peces) el un agente oxidante fuerte, oxida el el ácido clorhídrico para formar cloro molecular y sal manganosa
+
+\paragraph{Ejemplo}
+Balancear la siguiente ecuación química
+
+\[
+\ce{
+KMnO4 + HCl
+->
+MnCl2 + KCl + Cl2 + 8H2O
+}
+\]
+
+\paragraph{Ionización de las especies}
+
+Antes de aplicar el método, es necesario identificar qué sustancias se ionizan en disolución acuosa:
+
+\begin{itemize}
+    \item \textbf{Se ionizan (electrolitos fuertes):}
+    \[
+    \ce{KMnO4(aq) -> K^+ + MnO4^-}
+    \]
+    \[
+    \ce{HCl(aq) -> H^+ + Cl^-}
+    \]
+
+    \item \textbf{No se ionizan:}
+    \begin{itemize}
+        \item \(\ce{Cl2(g)}\) (sustancia molecular)
+        \item \(\ce{H2O(l)}\)
+    \end{itemize}
+\end{itemize}
+
+---
+
+\paragraph{Ecuación iónica sin balancear}
+
+Eliminando los iones espectadores (\(\ce{K^+}\)):
+
+\[
+\ce{MnO4^- + Cl^- + H^+ -> Mn^{2+} + Cl2 + H2O}
+\]
+
+---
+
+\paragraph{Pasos del método ion--electrón en medio ácido}
+
+\begin{enumerate}
+    \item Separar la reacción en semirreacciones de oxidación y reducción.
+    \item Balancear todos los elementos excepto O y H.
+    \item Balancear O agregando \(\ce{H2O}\).
+    \item Balancear H agregando \(\ce{H^+}\).
+    \item Balancear la carga agregando electrones (\(\ce{e^-}\)).
+    \item Igualar el número de electrones transferidos.
+    \item Sumar las semirreacciones y simplificar.
+\end{enumerate}
+
+---
+
+\paragraph{Semirreacción de reducción (radical permanganato)}
+
+\[
+\ce{MnO4^- -> Mn^{2+}}
+\]
+
+Balanceando en medio ácido:
+
+\[
+\ce{MnO4^- + 8H^+ + 5e^- -> Mn^{2+} + 4H2O}
+\]
+
+---
+
+\paragraph{Semirreacción de oxidación (ión cloruro)}
+
+\[
+\ce{Cl^- -> Cl2}
+\]
+
+Balanceando carga y masa:
+
+\[
+\ce{2Cl^- -> Cl2 + 2e^-}
+\]
+
+---
+
+\paragraph{Igualación de electrones}
+
+Mínimo común múltiplo de electrones: \(10\)
+
+\[
+\ce{2MnO4^- + 16H^+ + 10e^- -> 2Mn^{2+} + 8H2O}
+\]
+
+\[
+\ce{10Cl^- -> 5Cl2 + 10e^-}
+\]
+
+---
+
+\paragraph{Ecuación iónica global balanceada}
+
+\[
+\ce{
+2MnO4^- + 16H^+ + 10Cl^-
+->
+2Mn^{2+} + 5Cl2 + 8H2O
+}
+\]
+
+---
+
+\paragraph{Ecuación molecular balanceada}
+
+Reincorporando los iones espectadores:
+
+\[
+\ce{
+2KMnO4 + 16HCl
+->
+2MnCl2 + 2KCl + 5Cl2 + 8H2O
+}
+\]
+
+---
+
+
+\subsubsection*{Método ion--electrón en medio básico}
+
+Este método se utiliza para balancear reacciones de oxidación--reducción en disolución básica, empleando \(\ce{OH^-}\) y \(\ce{H2O}\) para balancear oxígeno e hidrógeno.
+
+Ejemplo:
+\paragraph{Balancear la siguiente ecuación química en medio básico}
+
+\[
+\ce{
+Cr2(SO4)3 + KClO3 + KOH
+->
+K2CrO4 + K2SO4 + KCl + H2O
+}
+\]
+
+
+%=====================================================
+\paragraph{1. Ionización de las especies}
+
+En disolución acuosa:
+
+\begin{itemize}
+    \item \textbf{Se ionizan:}
+    \[
+    \ce{Cr2(SO4)3(aq) -> 2Cr^{3+} + 3SO4^{2-}}
+    \]
+    \[
+    \ce{KClO3(aq) -> K^+ + ClO3^-}
+    \]
+    \[
+    \ce{KOH(aq) -> K^+ + OH^-}
+    \]
+
+    \item \textbf{Iones espectadores:}
+    \[
+    \ce{K^+,\ SO4^{2-}}
+    \]
+\end{itemize}
+
+---
+
+\paragraph{2. Ecuación iónica sin balancear}
+
+Eliminando los iones espectadores:
+
+\[
+\ce{
+Cr^{3+} + ClO3^- + OH^-
+->
+CrO4^{2-} + Cl^- + H2O
+}
+\]
+
+---
+
+\paragraph{3. Identificación de procesos redox}
+
+\begin{itemize}
+    \item Oxidación:
+    \[
+    \ce{Cr^{3+} -> Cr^{6+}}
+    \]
+    \item Reducción:
+    \[
+    \ce{Cl^{+5} -> Cl^{-1}}
+    \]
+\end{itemize}
+
+---
+
+\paragraph{4. Semirreacción de oxidación (Cr)}
+
+Balanceo en medio básico:
+
+\[
+\ce{Cr^{3+} -> CrO4^{2-}}
+\]
+
+Balanceando O y H:
+\[
+\ce{Cr^{3+} + 8OH^- -> CrO4^{2-} + 4H2O + 3e^-}
+\]
+
+---
+
+\paragraph{5. Semirreacción de reducción (ClO\textsubscript{3}\textsuperscript{--})}
+
+\[
+\ce{ClO3^- -> Cl^-}
+\]
+
+Balanceando en medio básico:
+\[
+\ce{ClO3^- + 3H2O + 6e^- -> Cl^- + 6OH^-}
+\]
+
+---
+
+\paragraph{6. Igualación de electrones}
+
+Mínimo común múltiplo de electrones: \(6\)
+
+\[
+\ce{2Cr^{3+} + 16OH^- -> 2CrO4^{2-} + 8H2O + 6e^-}
+\]
+
+\[
+\ce{ClO3^- + 3H2O + 6e^- -> Cl^- + 6OH^-}
+\]
+
+---
+
+\paragraph{7. Suma de semirreacciones}
+
+\[
+\ce{
+2Cr^{3+} + ClO3^- + 10OH^-
+->
+2CrO4^{2-} + Cl^- + 5H2O
+}
+\]
+
+---
+
+\paragraph{8. Ecuación molecular balanceada}
+
+Reincorporando los iones espectadores:
+
+\[
+\ce{
+Cr2(SO4)3 + KClO3 + 10KOH
+->
+2K2CrO4 + 3K2SO4 + KCl + 5H2O
+}
+\]
+
+---
+
+\paragraph{9. Verificación}
+
+\begin{itemize}
+    \item Cr: \(2 = 2\)
+    \item Cl: \(1 = 1\)
+    \item S: \(3 = 3\)
+    \item K: \(11 = 11\)
+    \item H: \(10 = 10\)
+    \item O: \(25 = 25\)
+\end{itemize}
+
+
+\paragraph{Observaciones}
+
+\begin{itemize}
+    \item El manganeso se reduce de \(+7\) a \(+2\).
+    \item El cloruro se oxida de \(-1\) a \(0\).
+    \item El ácido clorhídrico actúa como agente reductor.
+    \item El permanganato es un agente oxidante fuerte en medio ácido.
+\end{itemize}
+
+---
+
+
+\subsection{Balance de ecuaciones con estados físicos}
+
+Los estados físicos se indican entre paréntesis:
+\[
+\ce{(s) \quad (l) \quad (g) \quad (aq)}
+\]
+
+Ejemplo:
+\[
+\ce{Zn(s) + 2HCl(aq) -> ZnCl2(aq) + H2(g)}
+\]
+
+---
+
+\subsection{Errores comunes en el balanceo}
+
+\begin{itemize}
+    \item Cambiar subíndices en lugar de coeficientes.
+    \item No verificar todos los elementos.
+    \item Usar coeficientes fraccionarios finales.
+    \item Omitir la carga en ecuaciones iónicas.
+\end{itemize}
+
